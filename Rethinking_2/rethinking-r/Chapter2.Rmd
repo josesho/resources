@@ -1,0 +1,27 @@
+---
+title: "Chapter 2"
+author: "Joses Ho"
+date: "4/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Code 2.1
+
+```{r code2.1}
+ways <- c(0,3,8,9,0)
+print(ways/sum(ways))
+```
+
+## Code 2.2
+
+`dbinom` produces the density function, aka probability mass function.
+
+```{r code2.2}
+help("dbinom")
+dbinom(x=6, size=9, prob=0.5)
+```
+
